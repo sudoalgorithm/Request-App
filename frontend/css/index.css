@@ -1,0 +1,28 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+
+#left-nav-bar{
+    height: 100vh;
+    background: #002D9C;
+    position:relative;
+    width: 85%;
+}
+
+#ibm-logo{
+    margin: 10px;
+    padding: 15px;
+    height: 16%;
+    width: 100%;
+    position:absolute;
+    bottom:0
+}
+
+#request-form{
+    margin: 25px;
+}
+
+#submit-form{
+    background: #002D9C;
+}

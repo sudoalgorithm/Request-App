@@ -21,11 +21,9 @@ function validateEmailAddress(inputEmailAddress){
 }
 
 function validateGaia(inputGaia){
-
 }
 
 function requestdescription(inputRequestDescription){
-
 }
 
 function sumbitform(){

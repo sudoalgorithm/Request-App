@@ -1,37 +1,31 @@
 body{
-    height: 100vh;
-    width: 100hw;
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
 #left-nav-bar{
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
     background: #002D9C;
-    position:relative;
 }
 
 #ibm-logo{
-    width: 85%;
-    margin: 20px;
-    position:absolute;
-    bottom:0;
+    width: 80%;
+    align-self: flex-end;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 #request-form{
-    margin: 20px;
-    margin-right: 40px;
-    display: block;
+    width: 95%;
+    margin: 25px auto;
 }
 
-#submit-form{
+#submit-form-btn{
     background: #002D9C;
 }
 
-.col-9-override{
+.col-10-override{
     padding-left: 0px;
-    padding-right: 0px;
-}
-
-.col-3-override{
-    padding-right: 0px;
 }

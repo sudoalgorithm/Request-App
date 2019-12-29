@@ -5,19 +5,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Request App</title>
         <!----------------------------------------------------CSS--------------------------------------------------------------------------------->
-        <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap"> 
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/index.css">
     </head>
     <body>
-        <div>
+        <div class="container-flex">
             <div class="row">
-                <div class="col-3 col-3-override">
+                <div class="col-2">
                     <div id="left-nav-bar">
-                        <img id="ibm-logo" src="../assets/images/ibm_logo.png">
+                        <img class="center-block" id="ibm-logo" src="../assets/images/ibm_logo.png">
                     </div>
                 </div>
-                <div class="col-9 col-9-override">
+                <div class="col-10 col-10-override">
                     <div id="request-form">
                         <form>
                             <div class="form-group">
@@ -48,12 +49,13 @@
                                 <textarea class="form-control" placeholder="Opportunity Description" id="requestdescriptioninput" rows="11"></textarea>
                             </div>
                         </form>
-                        <button id="submit-form" type="button" class="btn btn-primary btn-lg btn-block" onclick="sumbitform()">SUBMIT</button>
+                        <button id="submit-form-btn" type="button" class="btn btn-primary btn-lg btn-block" onclick="sumbitform()">SUBMIT</button>
                     </div> 
                 </div>
             </div>
         </div>
         <!---------------------------------------------------JAVASCRIPT--------------------------------------------------------------------------------->
+        <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="../js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../js/index.js"></script>
     </body>

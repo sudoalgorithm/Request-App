@@ -57,7 +57,7 @@ function sumbitform(){
 
     if(validateName(fullname) && validateEmailAddress(emailAddress) && validateCloudPakValue(cloudpakvalue) && validateGaia(gaia) && validateRequestdescription(requestdescription)){
         var xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://0.0.0.0:8000/api/v1/sendmessage/", true);
+        xhr.open("POST", "169.48.227.245:30748/api/v1/sendmessage/", true);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {

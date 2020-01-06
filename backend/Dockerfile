@@ -13,4 +13,6 @@ RUN apk add --no-cache --virtual .build-deps gcc musl-dev \
 
 COPY . .
 
+EXPOSE 8000
+
 CMD ["gunicorn","-w 4", "__init__:app"]

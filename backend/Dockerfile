@@ -1,11 +1,16 @@
-FROM python3.7-alpine
+FROM python:3.7-alpine
 
 LABEL maintainer="Kunal Malhotra, kunal.malhotra3@ibm.com"
 
-COPY . /app
-
 WORKDIR /app
 
-RUN pip install -r requirements.txt
+COPY requirements.txt .
+
+RUN apk add --no-cache --virtual .build-deps gcc musl-dev \
+ && pip install cython \
+ && pip install -r requirements.txt --default-timeout=100 future \
+ && apk del .build-deps
+
+COPY . .
 
 CMD ["gunicorn","-w 4", "__init__:app"]
